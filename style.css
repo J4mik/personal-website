@@ -8,6 +8,10 @@
     --name-width: 180px;
 }
 
+span.spacer20 {
+    width: 20px;
+}
+
 a {
     text-decoration: none;
     color: #fff;
@@ -24,6 +28,7 @@ header {
     padding: 0 15px;
     position: fixed;
 }
+
 header > h2 {
     width: var(--name-width);
 }
@@ -59,13 +64,26 @@ div.content {
 }
 
 div.content2 {
-    padding: 16px;
-    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    width: 1032px;
     max-width: 85vw;
 }
 
-div.content2 > p {
-    padding: 0 10px;
+div.content2 > div {
+    height: max-content;
+    padding: 4px;
+    border-radius: 8px;
+    background-image: linear-gradient(45deg, #6D5293, #b32773);
+}
+
+div.content2 > div:first-child {
+    background-image: linear-gradient(45deg, #277cb3, #6D5293);
+}
+
+div.content2 > div > p {
+    width: 479px;
+    height: max-content;
 }
 
 p {
